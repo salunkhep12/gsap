@@ -1,15 +1,25 @@
-gsap.to("#box1", {
-    x: 800,
-    duration: 3,
-    rotate: 360,
-    backgroundColor: "#fff",
-    borderRadius: "50%"
+
+// ====== GSAP Timeline ======
+var tl = gsap.timeline()
+
+tl.from("h2",{
+    y: -30,
+    opacity: 0,
+    duration: 1, 
+    delay: 0.5
 })
 
-gsap.to("#box2", {
-    x: 800,
-    duration: 3,
-    rotate: 360,
-    backgroundColor: "#fff",
-    borderRadius: "50%"
+tl.from("h4",{
+    y: -20,
+    opacity: 0,
+    duration: 1, 
+    delay: 0.5,
+    stagger: 0.3
+})
+
+tl.from("h1", {
+    y: 20,
+    opacity:0,
+    duration: 0.5,
+    scale: 0.2
 })
